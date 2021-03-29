@@ -1,23 +1,36 @@
 {
-  "name": "gitmoji_husky",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dongoc/gitmoji_test.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dongoc/gitmoji_test/issues"
-  },
-  "homepage": "https://github.com/dongoc/gitmoji_test#readme",
-  "devDependencies": {
-    "husky": "^6.0.0"
-  }
+	"name": "gitmoji_husky",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dongoc/gitmoji_test.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/dongoc/gitmoji_test/issues"
+	},
+	"homepage": "https://github.com/dongoc/gitmoji_test#readme",
+	"devDependencies": {
+		"husky": "^6.0.0",
+		"jira-prepare-commit-msg": "^1.5.2"
+	},
+	"husky": {
+		"hooks": {
+			"prepare-commit-msg": "jira-prepare-commit-msg"
+		}
+	},
+	"jira-prepare-commit-msg": {
+		"messagePattern": "[$J]\n$M",
+		"jiraTicketPattern": "([A-Z]+-\\d+)",
+		"commentChar": "#",
+		"isConventionalCommit": false,
+		"allowEmptyCommitMessage": false
+	}
 }
