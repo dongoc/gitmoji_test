@@ -1,1 +1,1 @@
-1. setup
+1. 🎉 Project Setup
