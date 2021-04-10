@@ -2,6 +2,7 @@
 2. 🌟 emoji test
 3. 🥕 hooks echo test
 4. 📒 hooks echo test2
+5. 일단 지라 이슈 티켓용 가져와봤어요
 
 TODOS
 1. 커밋메세지를 가져온다
